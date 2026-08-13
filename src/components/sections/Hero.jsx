@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  GlowCard,
-  MagneticButton,
-  Badge,
-  GradientText,
-  TextRevealImage,
-} from "../ui";
+import { GlowCard, MagneticButton, Badge, GradientText } from "../ui";
 import { ArrowRight, Zap } from "lucide-react";
 
 /**
@@ -50,12 +44,12 @@ export function Hero() {
         </motion.div>
 
         {/* Main Headline */}
-        <motion.div variants={itemVariants}>
-          <TextRevealImage className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight inline-block">
-            Premium React & <GradientText animate>UI/UX</GradientText>{" "}
-            Development
-          </TextRevealImage>
-        </motion.div>
+        <motion.h1
+          variants={itemVariants}
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
+        >
+          Premium React & <GradientText animate>UI/UX</GradientText> Development
+        </motion.h1>
 
         {/* Subheadline */}
         <motion.p
